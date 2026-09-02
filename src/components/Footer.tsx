@@ -17,6 +17,7 @@ export default function Footer() {
           <Link href="#sectors">Sectors</Link>
           <Link href="#about">About</Link>
           <Link href="#contact">Contact</Link>
+          <Link href="/privacy">Privacy</Link>
         </nav>
 
         <div className="footer__meta">

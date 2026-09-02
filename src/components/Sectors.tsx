@@ -57,16 +57,6 @@ export default function Sectors() {
             </article>
           ))}
         </div>
-
-        <div className="sectors__future">
-          <span>Developing areas</span>
-
-          <p>
-            Future consultancy areas include strategic
-            transformation, safeguarding in sport and safeguarding
-            within arts and theatre organisations working with minors.
-          </p>
-        </div>
       </div>
     </section>
   );

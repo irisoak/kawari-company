@@ -13,16 +13,12 @@ export default function Hero() {
           <h1>
             Expert advice.
             <br />
-            Practical clarity.
+            Impacting practice.
           </h1>
 
           <p className="hero__intro">
             Helping organisations understand and apply safeguarding,
             regulatory and governance requirements with confidence.
-          </p>
-
-          <p className="hero__supporting">
-            Policy into practice. Compliance into clarity.
           </p>
 
           <div className="hero__actions">
@@ -31,7 +27,7 @@ export default function Hero() {
             </Link>
 
             <Link href="#contact" className="hero__button hero__button--secondary">
-              Book a Consultation
+              Request a Consultation
             </Link>
           </div>
         </div>

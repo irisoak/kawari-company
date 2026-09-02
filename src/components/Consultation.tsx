@@ -31,8 +31,8 @@ export default function Consultation() {
             Prefer to get in touch first?
           </p>
 
-          <a href="mailto:hello@kawaricompany.co.uk">
-            hello@kawaricompany.co.uk
+          <a href="mailto:alex@kawaricompany.co.uk">
+            alex@kawaricompany.co.uk
           </a>
         </div>
       </div>

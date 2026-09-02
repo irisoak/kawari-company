@@ -136,57 +136,14 @@ a {
   align-items: center;
   justify-self: start;
 
-  gap: 0.75rem;
-
   text-decoration: none;
 }
 
-.header__mark {
-  display: grid;
-
-  width: 2.5rem;
-  height: 2.5rem;
-
-  place-items: center;
-
-  border: 1px solid var(--colour-accent);
-
-  color: var(--colour-accent);
-
-  font-family: var(--font-display), serif;
-  font-size: 1.8rem;
-
-  line-height: 1;
-}
-
-.header__menu-button {
-  display: none;
-}
-
-.header__name {
-  display: grid;
-
-  gap: 0.05rem;
-
-  text-transform: uppercase;
-  letter-spacing: 0.18em;
-}
-
-.header__name strong {
-  color: var(--colour-primary);
-
-  font-family: var(--font-display), serif;
-  font-size: 1.1rem;
-  font-weight: 500;
-
-  line-height: 1;
-}
-
-.header__name span {
-  color: var(--colour-text-secondary);
-
-  font-size: 0.55rem;
-  font-weight: 600;
+.header__logo {
+  width: 230px;
+  height: auto;
+  display: block;
+  transform: translateY(10px);
 }
 
 /* Navigation */
@@ -197,7 +154,7 @@ a {
   align-items: center;
   justify-content: center;
 
-  gap: 2.25rem;
+  gap: 3.1rem;
 
   margin: 0;
   padding: 0;
@@ -208,7 +165,7 @@ a {
 .header__nav a {
   color: var(--colour-text-primary);
 
-  font-size: 0.8rem;
+  font-size: 0.92rem;
   font-weight: 500;
 
   text-decoration: none;
@@ -444,7 +401,7 @@ a {
 
   color: var(--colour-accent);
 
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   font-weight: 600;
 
   text-transform: uppercase;
@@ -632,6 +589,13 @@ a {
   background: #faf8f3;
 }
 
+.expertise__inner {
+  width: min(
+    calc(100% - 4rem),
+    96rem
+  );
+}
+
 .expertise__header {
   display: flex;
 
@@ -650,7 +614,7 @@ a {
   color: var(--colour-text-primary);
 
   font-family: var(--font-display), serif;
-  font-size: 1.65rem;
+  font-size: 1.95rem;
   font-weight: 500;
 }
 
@@ -686,9 +650,7 @@ a {
 
   min-width: 0;
 
-  padding:
-    0
-    1.75rem;
+  padding-inline: 1.75rem;
 
   text-align: center;
 }
@@ -711,7 +673,7 @@ a {
 }
 
 .expertise__item h2 {
-  max-width: 12rem;
+  max-width: 14rem;
 
   margin:
     0
@@ -727,7 +689,7 @@ a {
 }
 
 .expertise__item p {
-  max-width: 15rem;
+  max-width: 17rem;
 
   margin:
     1rem
@@ -868,7 +830,7 @@ a {
 
   color: var(--colour-surface);
 
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   font-weight: 600;
 
   text-transform: uppercase;
@@ -883,10 +845,10 @@ a {
   color: var(--colour-background);
 
   font-family: var(--font-display), serif;
-  font-size: clamp(3rem, 5vw, 5rem);
+  font-size: clamp(2.7rem, 11vw, 3.6rem);
   font-weight: 400;
 
-  line-height: 0.98;
+  line-height: 1.02;
   letter-spacing: -0.02em;
 }
 
@@ -952,7 +914,7 @@ a {
 .experience__statement span {
   color: var(--colour-surface);
 
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-weight: 600;
 
   text-transform: uppercase;
@@ -1045,7 +1007,7 @@ a {
 
   color: var(--colour-accent);
 
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   font-weight: 600;
 
   text-transform: uppercase;
@@ -1075,7 +1037,7 @@ a {
 
   color: var(--colour-text-secondary);
 
-  font-size: 0.95rem;
+  font-size: 1.08rem;
   line-height: 1.75;
 }
 
@@ -1263,134 +1225,6 @@ a {
 }
 
 /* ========================================
-   Consultation
-======================================== */
-
-.consultation {
-  padding-block: 6rem;
-
-  background: var(--colour-primary);
-  color: var(--colour-background);
-}
-
-.consultation__inner {
-  display: grid;
-  grid-template-columns:
-    minmax(0, 1.2fr)
-    minmax(18rem, 0.6fr);
-
-  align-items: end;
-
-  gap: 6rem;
-}
-
-.consultation__eyebrow {
-  margin: 0 0 1.25rem;
-
-  color: var(--colour-surface);
-
-  font-size: 0.72rem;
-  font-weight: 600;
-
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-}
-
-.consultation__content h2 {
-  margin: 0;
-
-  color: var(--colour-background);
-
-  font-family: var(--font-display), serif;
-  font-size: clamp(3rem, 5vw, 5rem);
-  font-weight: 400;
-
-  line-height: 0.98;
-  letter-spacing: -0.025em;
-}
-
-.consultation__content > p:last-child {
-  max-width: 38rem;
-
-  margin: 1.75rem 0 0;
-
-  color:
-    color-mix(
-      in srgb,
-      var(--colour-background) 78%,
-      transparent
-    );
-
-  font-size: 0.95rem;
-  line-height: 1.8;
-}
-
-/* ========================================
-   Consultation — Action
-======================================== */
-
-.consultation__action {
-  display: flex;
-  flex-direction: column;
-
-  align-items: flex-start;
-}
-
-.consultation__button {
-  display: inline-flex;
-
-  min-height: 3.3rem;
-
-  align-items: center;
-  justify-content: center;
-
-  padding-inline: 1.5rem;
-
-  background: var(--colour-background);
-  color: var(--colour-primary);
-
-  border-radius: var(--radius-sm);
-
-  font-size: 0.8rem;
-  font-weight: 600;
-
-  text-decoration: none;
-
-  transition:
-    background 160ms ease,
-    transform 160ms ease;
-}
-
-.consultation__button:hover {
-  background: var(--colour-surface);
-
-  transform: translateY(-1px);
-}
-
-.consultation__action p {
-  margin: 2rem 0 0.35rem;
-
-  color:
-    color-mix(
-      in srgb,
-      var(--colour-background) 60%,
-      transparent
-    );
-
-  font-size: 0.75rem;
-}
-
-.consultation__action > a:not(.consultation__button) {
-  color: var(--colour-background);
-
-  font-family: var(--font-display), serif;
-  font-size: 1.15rem;
-
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.25rem;
-}
-
-/* ========================================
    Footer
 ======================================== */
 
@@ -1543,7 +1377,7 @@ a {
 
   color: var(--colour-surface);
 
-  font-size: 0.72rem;
+  font-size: 0.75rem;
   font-weight: 600;
 
   text-transform: uppercase;
@@ -1680,8 +1514,86 @@ a {
       transparent
     );
 
-  font-size: 0.7rem;
+  font-size: 0.76rem;
   line-height: 1.6;
+}
+
+.contact__footer button {
+  min-height: 3.2rem;
+
+  padding-inline: 1.5rem;
+
+  border: 0;
+  border-radius: var(--radius-sm);
+
+  background: var(--colour-background);
+  color: var(--colour-primary);
+
+  font-size: 0.78rem;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 160ms ease,
+    transform 160ms ease;
+}
+
+.contact__footer button:hover {
+  background: var(--colour-surface);
+
+  transform: translateY(-1px);
+}
+
+.contact__footer {
+  grid-column: 1 / -1;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 2rem;
+
+  margin-top: 0.5rem;
+}
+
+.contact__notice {
+  max-width: 26rem;
+
+  margin: 0;
+
+  color:
+    color-mix(
+      in srgb,
+      var(--colour-background) 55%,
+      transparent
+    );
+
+  font-size: 0.76rem;
+  line-height: 1.6;
+}
+
+.contact__privacy {
+  max-width: 28rem;
+
+  margin: 0;
+
+  color:
+    color-mix(
+      in srgb,
+      var(--colour-background) 72%,
+      transparent
+    );
+
+  font-size: 0.72rem;
+  line-height: 1.6;
+}
+
+.contact__privacy a {
+  color: var(--colour-background);
+
+  text-underline-offset: 0.2rem;
 }
 
 .contact__footer button {
@@ -1740,4 +1652,97 @@ a {
     flex-direction: column;
     align-items: flex-start;
   }
+}
+
+/* ========================================
+   Privacy
+======================================== */
+
+.privacy-page {
+  min-height: 100vh;
+
+  padding-block: 6rem;
+
+  background: var(--colour-background);
+}
+
+.privacy-page__inner {
+  max-width: 52rem;
+}
+
+.privacy-page__eyebrow {
+  margin: 0 0 1rem;
+
+  color: var(--colour-accent);
+
+  font-size: 0.75rem;
+  font-weight: 600;
+
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.privacy-page h1 {
+  margin: 0 0 2rem;
+
+  color: var(--colour-primary);
+
+  font-family: var(--font-display), serif;
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 400;
+
+  line-height: 1;
+}
+
+.privacy-page__intro {
+  margin-bottom: 3rem;
+
+  color: var(--colour-text-secondary);
+
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.privacy-page section + section {
+  margin-top: 2.5rem;
+}
+
+.privacy-page h2 {
+  margin: 0 0 0.75rem;
+
+  color: var(--colour-primary);
+
+  font-family: var(--font-display), serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.privacy-page section p {
+  margin: 0;
+
+  color: var(--colour-text-secondary);
+
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+.privacy-page__updated {
+  margin-top: 3rem;
+
+  color: var(--colour-text-secondary);
+
+  font-size: 0.75rem;
+}
+
+.privacy-page__back {
+  display: inline-block;
+
+  margin-top: 1.5rem;
+
+  color: var(--colour-primary);
+
+  font-size: 0.85rem;
+  font-weight: 600;
+
+  text-underline-offset: 0.25rem;
 }

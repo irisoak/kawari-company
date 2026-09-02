@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { site } from "@/data/site";
 
 export default function Header() {
@@ -12,19 +13,15 @@ export default function Header() {
   return (
     <header className="site-header">
       <div className="site-container--wide header__inner">
-        <Link
-          href="/"
-          className="header__brand"
-          onClick={closeMenu}
-        >
-          <span className="header__mark" aria-hidden="true">
-            K
-          </span>
-
-          <span className="header__name">
-            <strong>Kawari</strong>
-            <span>Company</span>
-          </span>
+        <Link href="/" className="header__brand" onClick={closeMenu}>
+          <Image
+            src="/images/kawari-logo.jpg"
+            alt="The Kawari Company"
+            width={420}
+            height={160}
+            priority
+            className="header__logo"
+          />
         </Link>
 
         <nav

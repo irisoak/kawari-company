@@ -17,12 +17,12 @@ const expertise = [
   {
     title: "Board & Leadership Training",
     description:
-      "Practical safeguarding and governance training for Boards and senior leaders.",
+      "Governance training for Boards and senior leaders, with practical support across safeguarding and organisational responsibilities.",
   },
   {
-    title: "Early Years & Regulation",
+    title: "Social Care, Regulation & Early Years",
     description:
-      "Consultancy across early years education, regulation and compliance.",
+      "Social care regulation and early years education, regulation and compliance.",
   },
 ];
 

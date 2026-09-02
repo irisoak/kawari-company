@@ -8,9 +8,7 @@ export default function Experience() {
           </p>
 
           <h2>
-            Experience of both
-            <br />
-            policy and practice.
+            Experience of both policy and practice.
           </h2>
         </div>
 
