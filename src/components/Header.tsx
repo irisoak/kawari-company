@@ -46,7 +46,7 @@ export default function Header() {
           className="header__consultation"
           onClick={closeMenu}
         >
-          Book a Consultation
+          Request a Consultation
         </Link>
 
         <button

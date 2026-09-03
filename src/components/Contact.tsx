@@ -131,7 +131,11 @@ export default function Contact() {
               </option>
 
               <option value="social-care-regulation-early-years">
-                Social Care, Regulation & Early Years
+                Social Care
+              </option>
+
+              <option value="social-care-regulation-early-years">
+                Early Years
               </option>
 
               <option value="other">

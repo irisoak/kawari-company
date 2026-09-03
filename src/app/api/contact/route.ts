@@ -47,7 +47,7 @@ export async function POST(request: Request) {
       .replaceAll("\n", "<br />");
 
     const { data, error } = await resend.emails.send({
-      from: "Kawari Website <onboarding@resend.dev>",
+      from: "Kawari Company <enquiries@kawaricompany.com>",
       to: "alex@kawaricompany.com",
       replyTo: email,
       subject: `New Kawari enquiry from ${safeName}`,
