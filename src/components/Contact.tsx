@@ -191,8 +191,12 @@ export default function Contact() {
               )}
             </div>
 
-            <button type="submit" disabled>
-              Enquiries opening shortly
+            <button
+              type="submit"
+              className="contact__submit"
+              disabled={status === "sending"}
+            >
+              {status === "sending" ? "Sending..." : "Send enquiry"}
             </button>
           </div>
         </form>
