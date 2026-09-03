@@ -528,7 +528,6 @@ a {
 @media (max-width: 48rem) {
   .hero__inner {
     grid-template-columns: 1fr;
-    padding-left: 0;
   }
 
   .hero__content {
@@ -544,10 +543,7 @@ a {
 
   .hero__media {
     order: 1;
-
     min-height: 18rem;
-
-    margin-inline: -1rem;
   }
 
   .hero__media::after {
