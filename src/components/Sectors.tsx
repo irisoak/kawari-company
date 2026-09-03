@@ -5,7 +5,7 @@ const sectors = [
       "Supporting Boards and leadership teams with safeguarding advice, governance and independent scrutiny.",
   },
   {
-    title: "Early Years & Education",
+    title: "Social Care, Regulation & Early Years",
     description:
       "Consultancy across early years education, regulation, compliance and organisational practice.",
   },
