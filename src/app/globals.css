@@ -1660,89 +1660,202 @@ a {
 
 .privacy-page {
   min-height: 100vh;
-
-  padding-block: 6rem;
-
+  padding: 4rem 0 6rem;
   background: var(--colour-background);
+  color: var(--colour-primary);
 }
 
 .privacy-page__inner {
-  max-width: 52rem;
-}
-
-.privacy-page__eyebrow {
-  margin: 0 0 1rem;
-
-  color: var(--colour-accent);
-
-  font-size: 0.75rem;
-  font-weight: 600;
-
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-}
-
-.privacy-page h1 {
-  margin: 0 0 2rem;
-
-  color: var(--colour-primary);
-
-  font-family: var(--font-display), serif;
-  font-size: clamp(3rem, 6vw, 5rem);
-  font-weight: 400;
-
-  line-height: 1;
-}
-
-.privacy-page__intro {
-  margin-bottom: 3rem;
-
-  color: var(--colour-text-secondary);
-
-  font-size: 1.05rem;
-  line-height: 1.8;
-}
-
-.privacy-page section + section {
-  margin-top: 2.5rem;
-}
-
-.privacy-page h2 {
-  margin: 0 0 0.75rem;
-
-  color: var(--colour-primary);
-
-  font-family: var(--font-display), serif;
-  font-size: 1.6rem;
-  font-weight: 500;
-}
-
-.privacy-page section p {
-  margin: 0;
-
-  color: var(--colour-text-secondary);
-
-  font-size: 0.95rem;
-  line-height: 1.8;
-}
-
-.privacy-page__updated {
-  margin-top: 3rem;
-
-  color: var(--colour-text-secondary);
-
-  font-size: 0.75rem;
+  max-width: 900px;
 }
 
 .privacy-page__back {
   display: inline-block;
+  margin-bottom: 4rem;
+  font-size: 0.82rem;
+  text-decoration: none;
+}
 
-  margin-top: 1.5rem;
-
-  color: var(--colour-primary);
-
-  font-size: 0.85rem;
+.privacy-page__eyebrow {
+  margin-bottom: 1rem;
+  font-size: 0.72rem;
   font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
 
-  text-underline-offset: 0.25rem;
+.privacy-page h1 {
+  max-width: 700px;
+  margin-bottom: 4rem;
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 6vw, 5.5rem);
+  font-weight: 400;
+  line-height: 0.95;
+}
+
+.privacy-page__content {
+  max-width: 700px;
+}
+
+.privacy-page__content section {
+  padding: 2rem 0;
+  border-top: 1px solid
+    color-mix(in srgb, var(--colour-primary) 18%, transparent);
+}
+
+.privacy-page__content h2 {
+  margin-bottom: 0.75rem;
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.privacy-page__content p {
+  max-width: 650px;
+  margin: 0;
+  line-height: 1.8;
+}
+
+.privacy-page__content a,
+.privacy-page__back {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+/* ========================================
+   DIGITAL BUSINESS CARD
+   ======================================== */
+
+.business-card-page {
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  padding: 1.5rem;
+  background: #263746;
+  color: #263746;
+}
+
+.business-card {
+  width: 100%;
+  max-width: 430px;
+  min-height: min(720px, calc(100svh - 3rem));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 2rem 2rem;
+  background: #f4f0e8;
+  border-radius: 1.5rem;
+  text-align: center;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.18);
+}
+
+.business-card__logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.75rem;
+}
+
+.business-card__logo img {
+  width: min(260px, 85%);
+  height: auto;
+  object-fit: contain;
+}
+
+.business-card__identity h1 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 10vw, 3.5rem);
+  font-weight: 400;
+  line-height: 1;
+}
+
+.business-card__identity p {
+  margin: 0.65rem 0 0;
+  color: #756458;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.business-card__strapline {
+  max-width: 300px;
+  margin: 2rem auto;
+  color: #667786;
+  font-size: 0.76rem;
+  line-height: 1.7;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.business-card__email {
+  margin-bottom: 2rem;
+  color: #263746;
+  font-size: 0.9rem;
+  text-decoration: none;
+  border-bottom: 1px solid #d8d0c3;
+  padding-bottom: 0.2rem;
+}
+
+.business-card__actions {
+  width: 100%;
+  display: grid;
+  gap: 0.75rem;
+  margin-top: auto;
+}
+
+.business-card__button {
+  width: 100%;
+  min-height: 3.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.9rem 1.25rem;
+  border-radius: 0.65rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    transform 160ms ease,
+    background 160ms ease;
+}
+
+.business-card__button:active {
+  transform: scale(0.98);
+}
+
+.business-card__button--primary {
+  background: #263746;
+  color: #f4f0e8;
+}
+
+.business-card__button--primary:hover {
+  background: #354a5b;
+}
+
+.business-card__button--secondary {
+  border: 1px solid #d8d0c3;
+  background: transparent;
+  color: #263746;
+}
+
+.business-card__button--secondary:hover {
+  background: #ebe5db;
+}
+
+@media (max-width: 480px) {
+  .business-card-page {
+    padding: 0;
+    background: #f4f0e8;
+  }
+
+  .business-card {
+    max-width: none;
+    min-height: 100svh;
+    padding: 2.5rem 1.5rem 1.5rem;
+    border-radius: 0;
+    box-shadow: none;
+  }
 }

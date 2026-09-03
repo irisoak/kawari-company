@@ -1,0 +1,8 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Alex
+ORG:Kawari Company
+TITLE:Founder & Managing Director
+EMAIL;TYPE=INTERNET,WORK:alex@kawaricompany.com
+URL:https://kawari-company.vercel.app
+END:VCARD
