@@ -1,8 +1,14 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export const metadata = {
-  title: "Kawari Company | Digital Business Card",
+  title: "Digital Business Card",
   description: "Contact details for Kawari Company.",
+
+  robots: {
+    index: false,
+    follow: true,
+  },
 };
 
 export default function CardPage() {
@@ -43,12 +49,12 @@ export default function CardPage() {
             Email
           </a>
 
-          <a
+          <Link
             href="/"
             className="business-card__button business-card__button--secondary"
           >
             Visit Website
-          </a>
+          </Link>
 
           <a
             href="/contact/alex-kawari.vcf"

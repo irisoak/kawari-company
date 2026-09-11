@@ -14,9 +14,23 @@ const bodyFont = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Kawari Company",
+  metadataBase: new URL(
+    "https://www.kawaricompany.com",
+  ),
+
+  title: {
+    default:
+      "Kawari Company | Safeguarding, Regulation & Independent Review",
+    template: "%s | Kawari Company",
+  },
+
   description:
-    "Specialist consultancy across safeguarding, regulation, education and independent review.",
+    "Independent consultancy supporting organisations with safeguarding, regulation, governance, investigations and independent reviews.",
+
+  applicationName: "Kawari Company",
+
+  creator: "Kawari Company",
+  publisher: "Kawari Company",
 };
 
 export default function RootLayout({

@@ -34,7 +34,7 @@ export default function Hero() {
 
         <div className="hero__media">
           <Image
-            src="/images/hero-architecture.jpg"
+            src="/images/hero-architecture.jpeg"
             alt="Calm architectural interior"
             fill
             priority

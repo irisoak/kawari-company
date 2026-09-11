@@ -1,9 +1,14 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Privacy Notice | Kawari Company",
+  title: "Privacy Notice",
+
   description:
     "Privacy information for visitors and people contacting Kawari Company.",
+
+  alternates: {
+    canonical: "/privacy",
+  },
 };
 
 export default function PrivacyPage() {
