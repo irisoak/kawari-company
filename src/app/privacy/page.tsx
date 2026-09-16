@@ -102,8 +102,8 @@ export default function PrivacyPage() {
             <h2>Contact</h2>
             <p>
               For privacy enquiries, contact{" "}
-              <a href="mailto:alex@kawaricompany.com">
-                alex@kawaricompany.com
+              <a href="mailto:info@kawaricompany.com">
+                info@kawaricompany.com
               </a>
               .
             </p>

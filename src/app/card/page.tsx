@@ -35,15 +35,15 @@ export default function CardPage() {
         </p>
 
         <a
-          href="mailto:alex@kawaricompany.com"
+          href="mailto:info@kawaricompany.com"
           className="business-card__email"
         >
-          alex@kawaricompany.com
+          info@kawaricompany.com
         </a>
 
         <div className="business-card__actions">
           <a
-            href="mailto:alex@kawaricompany.com"
+            href="mailto:info@kawaricompany.com"
             className="business-card__button business-card__button--primary"
           >
             Email
