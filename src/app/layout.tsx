@@ -14,9 +14,8 @@ const bodyFont = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(
-    "https://www.kawaricompany.com",
-  ),
+
+  metadataBase: new URL("https://kawaricompany.com"),
 
   title: {
     default:

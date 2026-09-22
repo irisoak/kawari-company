@@ -1,7 +1,23 @@
-export const metadata = {
-  title: "About | The Kawari Company",
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About",
+
   description:
     "Learn about The Kawari Company, an independent consultancy supporting organisations with reviews, safeguarding, governance, leadership and meaningful improvement.",
+
+  alternates: {
+    canonical: "/about",
+  },
+
+  openGraph: {
+    title: "About | Kawari Company",
+    description:
+      "Learn about The Kawari Company, an independent consultancy supporting organisations with reviews, safeguarding, governance, leadership and meaningful improvement.",
+    url: "/about",
+    siteName: "Kawari Company",
+    type: "website",
+  },
 };
 
 const expertise = [
@@ -74,7 +90,7 @@ export default function AboutPage() {
         <p>
           We begin by listening. We examine the available evidence, speak with
           the people closest to the issues and consider the experience of those
-          affected by the organisation's work. We are comfortable working with
+          affected by the organisation&apos;s work. We are comfortable working with
           sensitive information, competing perspectives and situations where the
           way forward is not immediately clear.
         </p>
@@ -147,7 +163,7 @@ export default function AboutPage() {
 
         <p>
           We provide thoughtful, values-sensitive support that respects an
-          organisation's identity while maintaining independence and professional
+          organisation&apos;s identity while maintaining independence and professional
           rigour. Our work includes safeguarding reviews, governance support,
           policy evaluation and training for trustees, Board members, leaders,
           staff and volunteers.
@@ -175,7 +191,7 @@ export default function AboutPage() {
 
           <p>
             The Kawari Company was founded by Alex Magloire-Thompson, an
-            executive leader with more than 25 years' experience across national
+            executive leader with more than 25 years experience across national
             regulation, inspection, education, public service and the charitable
             sector.
           </p>
@@ -183,7 +199,7 @@ export default function AboutPage() {
           <p>
             Alex has held senior leadership roles at the Solicitors Regulation
             Authority and Ofsted, including as Chief of Staff, senior His
-            Majesty's Inspector and Deputy Director. Her roles included
+            Majesty&apos;s Inspector and Deputy Director. Her roles included
             responsibility for national adjudication, quality assurance,
             regulatory practice, inspection methodology, educational frameworks
             and organisational improvement.
@@ -198,7 +214,7 @@ export default function AboutPage() {
 
           <p>
             Her approach combines independence with humanity: asking difficult
-            questions where necessary, listening carefully to people's
+            questions where necessary, listening carefully to people&apos;s
             experiences and helping organisations move from findings to
             meaningful action.
           </p>

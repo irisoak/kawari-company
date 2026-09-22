@@ -9,6 +9,8 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://kawaricompany.com"),
+
   alternates: {
     canonical: "/",
   },
