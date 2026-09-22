@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "About",
-
   description:
     "Learn about The Kawari Company, an independent consultancy supporting organisations with reviews, safeguarding, governance, leadership and meaningful improvement.",
 
@@ -45,6 +46,8 @@ const reasons = [
 
 export default function AboutPage() {
   return (
+    <>
+    <Header />
     <main className="about-page">
       <section className="about-hero">
         <p className="about-eyebrow">About The Kawari Company</p>
@@ -57,7 +60,9 @@ export default function AboutPage() {
       </section>
 
       <section className="about-section about-intro">
-        <p>
+        <p className="about-section-label">Our work</p>
+
+        <p className="about-intro-lead">
           We work across public services, education, regulation and the faith
           sector. Our particular strengths lie in independent reviews,
           safeguarding, quality assurance, governance, organisational improvement
@@ -242,5 +247,8 @@ export default function AboutPage() {
         </p>
       </section>
     </main>
+
+    <Footer />
+    </>
   );
 }

@@ -12,7 +12,6 @@ export default function Hero() {
 
           <h1>
             Expert advice.
-            <br />
             Impacting practice.
           </h1>
 
