@@ -1712,6 +1712,139 @@ a {
 }
 
 /* ========================================
+   About page
+   ======================================== */
+
+.about-page {
+  background: #f8f4ec;
+  color: #1f261f;
+}
+
+.about-hero,
+.about-section {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 5rem 1.5rem;
+}
+
+.about-hero {
+  padding-top: 7rem;
+  padding-bottom: 5rem;
+}
+
+.about-eyebrow {
+  margin: 0 0 1rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.about-hero h1,
+.about-section h2 {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-weight: 400;
+  line-height: 1.05;
+}
+
+.about-hero h1 {
+  max-width: 900px;
+  font-size: clamp(3rem, 8vw, 6.5rem);
+}
+
+.about-hero p {
+  max-width: 720px;
+  margin: 2rem 0 0;
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+
+.about-section {
+  border-top: 1px solid rgba(31, 38, 31, 0.14);
+}
+
+.about-section h2 {
+  margin-bottom: 1.5rem;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+}
+
+.about-section p {
+  max-width: 820px;
+  margin: 0 0 1.25rem;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.about-list {
+  max-width: 900px;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.8rem;
+}
+
+.about-list li {
+  padding-left: 1.25rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+.about-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.7em;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 999px;
+  background: currentColor;
+}
+
+.about-founder {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.7fr) minmax(0, 2fr);
+  gap: 3rem;
+  align-items: start;
+}
+
+.about-stat {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  line-height: 0.95;
+}
+
+.about-stat-label {
+  max-width: 280px;
+  margin-top: 1rem;
+}
+
+.about-closing {
+  margin-top: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 760px) {
+  .about-hero,
+  .about-section {
+    padding: 3.5rem 1.25rem;
+  }
+
+  .about-hero {
+    padding-top: 5rem;
+  }
+
+  .about-founder {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+/* ========================================
    DIGITAL BUSINESS CARD
    ======================================== */
 
