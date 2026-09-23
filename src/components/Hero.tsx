@@ -11,8 +11,8 @@ export default function Hero() {
           </p>
 
           <h1>
-            Expert advice.
-            Impacting practice.
+            <span>Expert advice.</span>
+            <span>Impacting practice.</span>
           </h1>
 
           <p className="hero__intro">
