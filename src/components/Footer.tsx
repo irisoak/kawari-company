@@ -5,7 +5,9 @@ export default function Footer() {
     <footer className="footer">
       <div className="site-container footer__inner">
         <div className="footer__brand">
-          <span>Kawari Company</span>
+          <span>
+            <Link href="/">Kawari Company</Link>
+          </span>
 
           <p>
             Safeguarding · Regulation · Independent Review
@@ -13,10 +15,10 @@ export default function Footer() {
         </div>
 
         <nav className="footer__nav" aria-label="Footer navigation">
-          <Link href="#expertise">Expertise</Link>
-          <Link href="#sectors">Sectors</Link>
-          <Link href="#about">About</Link>
-          <Link href="#contact">Contact</Link>
+          <Link href="/#expertise">Expertise</Link>
+          <Link href="/#sectors">Sectors</Link>
+          <Link href="/about">About</Link>
+          <Link href="/#contact">Contact</Link>
           <Link href="/privacy">Privacy</Link>
         </nav>
 
