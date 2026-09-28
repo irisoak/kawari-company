@@ -4,7 +4,7 @@ Website designed and developed by Iris & Oak.
 
 ## Status
 
-Production  
+**Production**
 https://kawaricompany.com
 
 ## Stack
@@ -36,7 +36,7 @@ npm run lint
 npm run build
 ```
 
-Both should pass before production deployment.
+> Both should pass before production deployment.
 
 ## Deployment
 
@@ -59,5 +59,5 @@ Do not store credentials or secret values in this README.
 
 # Ownership
 
-Client: [Kawari Company](www.kawaricompany.com)
-Design & Development by [Iris & Oak](www.irisoak.dev)
+➜ Client: [Kawari Company](www.kawaricompany.com)
+➜ Design & Development by [Iris & Oak](www.irisoak.dev)
